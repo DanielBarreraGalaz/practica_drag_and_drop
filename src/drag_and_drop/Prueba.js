@@ -6,23 +6,24 @@ import './estilizado/estilos_prueba.css';
 
 const Wrapper = styled.div`
     width: 100%;
-    padding: 32px;
-    display: flex;
+    padding: 0px;
+    display: inline-block;
     justify-content: center;
 `;
 
 const Item = styled.div`
     padding: 8px;
-    color: #555;
-    background-color: white;
+    color: #000;
+    background-color: #80A7CB;
     border-radius: 3px;
 `;
 
 const droppableStyle = {
-    backgroundColor: 'blue',
+    backgroundColor: '#098668',
     width: '250px',
     height: '400px',
-    margin: '32px'
+    margin: '32px',
+    border: 'solid'
 };
 
 export default class Prueba extends React.Component {
@@ -31,12 +32,11 @@ export default class Prueba extends React.Component {
         return(
         <Wrapper>
             <Droppable id="dr1" style={droppableStyle}>
-                <Draggable id="item1" style={{ margin: '8px' }}><Item>Item 1</Item></Draggable>
-                <Draggable id="item2" style={{ margin: '8px' }}><Item>Item 2</Item></Draggable>
-                
+                <Draggable id="item1" style={{ margin: '5px' }}><Item>Item 1</Item></Draggable>
+                <Draggable id="item2" style={{ margin: '5px' }}><Item>Item 2</Item></Draggable> 
             </Droppable>
             <Droppable id="dr2" style={droppableStyle}>
-                <Draggable id="item3" style={{ margin: '8px' }}><Item>Item 3</Item></Draggable>
+                <Draggable id="item3" style={{ margin: '5px' }}><Item>Item 3</Item></Draggable>
             </Droppable>
             <button id="boton" className="button">Agregar item</button>
         </Wrapper>

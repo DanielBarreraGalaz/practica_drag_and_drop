@@ -8,7 +8,9 @@ export default class Droppable extends React.Component{
         const data = e.dataTransfer.getData('transfer');
         e.target.appendChild(document.getElementById(data)) //Esta instruccion permite agregar los datos del item draggeable en un nuevo droppable
     }
-
+    //dataTransfer: Metodo que permite trabajar con transferencia de datos
+    //Se usa (en este caso) el getData, ya que el droppable lo que hara sera recibir los datos del nuevo draggable que caera sobre el
+    
     //Funcion que permite soltar un elemento en el espacio dado
     allowDrop = (e) => {
         e.preventDefault();
