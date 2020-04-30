@@ -13,7 +13,7 @@ const Container = styled.div`
 
 function App() {
 
-  render(){
+  //render(){}
     return (
       <AppWrapper>
         <Container>
@@ -21,7 +21,6 @@ function App() {
         </Container>
       </AppWrapper>
     );
-  }
 }
 
 export default App;

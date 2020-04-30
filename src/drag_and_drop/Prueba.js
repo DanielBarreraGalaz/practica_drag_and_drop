@@ -27,14 +27,16 @@ const droppableStyle = {
 
 export default class Prueba extends React.Component {
     render(){
+        //Los id en los Draggables SON importantes, permitiran poder arrastrar los elementos a otro espacio sin problemas
         return(
         <Wrapper>
             <Droppable id="dr1" style={droppableStyle}>
                 <Draggable id="item1" style={{ margin: '8px' }}><Item>Item 1</Item></Draggable>
                 <Draggable id="item2" style={{ margin: '8px' }}><Item>Item 2</Item></Draggable>
+                
             </Droppable>
             <Droppable id="dr2" style={droppableStyle}>
-                
+                <Draggable id="item3" style={{ margin: '8px' }}><Item>Item 3</Item></Draggable>
             </Droppable>
         </Wrapper>
         );
