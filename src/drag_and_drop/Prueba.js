@@ -2,7 +2,7 @@ import React from 'react';  //  /* +tyT */
 import styled from 'styled-components';
 import Draggable from './Draggable'; 
 import Droppable from './Droppable';
-//import './estilizado/estilos.css';
+import './estilizado/estilos_prueba.css';
 
 const Wrapper = styled.div`
     width: 100%;
@@ -19,7 +19,7 @@ const Item = styled.div`
 `;
 
 const droppableStyle = {
-    backgroundColor: '#555',
+    backgroundColor: 'blue',
     width: '250px',
     height: '400px',
     margin: '32px'
@@ -38,6 +38,7 @@ export default class Prueba extends React.Component {
             <Droppable id="dr2" style={droppableStyle}>
                 <Draggable id="item3" style={{ margin: '8px' }}><Item>Item 3</Item></Draggable>
             </Droppable>
+            <button id="boton" className="button">Agregar item</button>
         </Wrapper>
         );
     }

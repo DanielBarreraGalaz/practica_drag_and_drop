@@ -15,11 +15,15 @@ function App() {
 
   //render(){}
     return (
-      <AppWrapper>
-        <Container>
-          <Prueba />
-        </Container>
-      </AppWrapper>
+      <div>
+        <h1>Arrastra y suelta</h1>
+        <AppWrapper>
+          <Container>
+            <Prueba />
+          </Container>
+        </AppWrapper>
+      </div>
+      
     );
 }
 
