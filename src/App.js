@@ -8,6 +8,7 @@ const AppWrapper = styled.div`
   margin-top: 100px;
 `;
 
+//Si bien no maneja ningun estilizado, la utilidad de esta constante viene en declarar un container que vamos a usar
 const Container = styled.div`
 `;
 
