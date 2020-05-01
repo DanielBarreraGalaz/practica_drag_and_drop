@@ -26,8 +26,7 @@ const droppableStyle = {
     border: 'solid'
 };
 
-export default class Prueba extends React.Component {
-    render(){
+const Prueba = () => {
         //Los id en los Draggables SON importantes, permitiran poder arrastrar los elementos a otro espacio sin problemas
         return(
         <Wrapper>
@@ -41,6 +40,7 @@ export default class Prueba extends React.Component {
             <button id="boton" className="button">Agregar item</button>
         </Wrapper>
         );
-    }
     
 }
+
+export default Prueba;
