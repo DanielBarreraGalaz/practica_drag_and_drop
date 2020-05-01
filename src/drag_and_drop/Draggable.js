@@ -1,5 +1,5 @@
 import React from 'react'; //  /* +tyT */
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 
 const Draggable = (props) => {
     
@@ -26,8 +26,8 @@ const Draggable = (props) => {
 
 export default Draggable;
 
-Draggable.propTypes = {
-    id: PropTypes.string,
-    style: PropTypes.object,
-    children: PropTypes.node,
-}
+//Draggable.propTypes = {
+//    id: PropTypes.string,
+//    style: PropTypes.object,
+//    children: PropTypes.node,
+//}
