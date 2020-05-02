@@ -37,7 +37,6 @@ const Prueba = () => {
             <Droppable id="dr2" style={droppableStyle}>
                 <Draggable id="item3" style={{ margin: '5px' }}><Item>Item 3</Item></Draggable>
             </Droppable>
-            <button id="boton" className="button">Agregar item</button>
         </Wrapper>
         );
     
